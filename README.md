@@ -11,14 +11,16 @@ OTP Generation :
 
 OTP Verification:
 
-![image](https://github.com/AnjuRKrishnan/Golang/assets/142514199/885cd51f-9dd3-41c7-9958-ee4ce175b315)
+![image](https://github.com/AnjuRKrishnan/Golang/assets/142514199/cae8538e-e276-418c-b6c7-a9842e2d26e7)
+
 
 
 OTP incorrect/ expired:
 
-![image](https://github.com/AnjuRKrishnan/Golang/assets/142514199/022a4ca9-7c81-486e-a987-5ea9ced0af8e)
+![image](https://github.com/AnjuRKrishnan/Golang/assets/142514199/ac1a5d23-54e9-46b3-a9bd-3591b071f7c7)
 
-![image](https://github.com/AnjuRKrishnan/Golang/assets/142514199/287550d1-9e57-4bba-afbb-3fa1cc6b2191)
+![image](https://github.com/AnjuRKrishnan/Golang/assets/142514199/9cb2ca98-7fd7-4ccf-b5cf-cadda668de3f)
+
 
 
 Solution 3:
