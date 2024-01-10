@@ -40,7 +40,6 @@ router.POST("/api/users", createUser(dbPool))
 router.POST("/api/users/generateotp", generateOTP(dbPool))
 router.POST("/api/users/verifyotp", verifyOTP(dbPool))
 
-// Run the server
 if err := router.Run(":8080"); err != nil {
 	fmt.Fprintf(os.Stderr, "Unable to connect to database: %v\n", err)
 }
@@ -142,7 +141,7 @@ return func(c *gin.Context) {
 	}
 	fmt.Println(existingUser.OTPExpirationTime)
 	fmt.Println(time.Now().UTC())
-	fmt.Println(time.Now().UTC().Before(existingUser.OTPExpirationTime))
+	fmt.Println(time.Now().UTC().After(existingUser.OTPExpirationTime))
 	
 	
 
