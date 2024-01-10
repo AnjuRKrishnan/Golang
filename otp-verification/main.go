@@ -28,27 +28,7 @@ func main() {
 
 	router := gin.Default()
 	var err error
-	// conn, err = pgx.Connect(context.Background(), "postgres://postgres:postgres@localhost:5432/postgres")
-	// if err != nil {
-	// 	fmt.Fprintf(os.Stderr, "Unable to connection to database: %v\n", err)
-	// 	os.Exit(1)
-	// }
-
-	// rows, _ := conn.Query(context.Background(), "select * from users")
-
-	// for rows.Next() {
-	// 	var id int
-	// 	var name string
-	// 	var phone_number string
-	// 	var otp string
-	// 	var otp_expiration_time string
-	// 	err := rows.Scan(&id, &name, &phone_number, &otp, &otp_expiration_time)
-	// 	if err != nil {
-	// 		fmt.Printf("%s\n", err)
-	// 	}
-	// 	fmt.Printf("%d. %s\n", id, name)
-	// }
-
+	
 	dbPool, err := pgxpool.Connect(context.Background(), "postgres://postgres:postgres@localhost:5432/postgres")
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Unable to connect to database: %v\n", err)
